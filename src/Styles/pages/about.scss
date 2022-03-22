@@ -1,0 +1,135 @@
+.about {
+	position: relative;
+	background: $color-dark-2;
+
+	.about-container {
+		width: 100%;
+		padding: 100px 200px;
+		text-align: left;
+
+		.about-title {
+			display: block;
+
+			h4 {
+				width: 100%;
+				color: $color-text-light;
+				font-weight: 600;
+				text-transform: capitalize;
+				text-align: left;
+				margin-bottom: 10px;
+			}
+
+			h2 {
+				font-weight: 700;
+				color: $color-text-accent;
+				padding-bottom: 20px;
+				margin-bottom: 50px;
+				position: relative;
+				margin-top: 15px;
+
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 80px;
+					height: 1px;
+					background: rgba(249, 20, 89, 0.4);
+					border-radius: 20px;
+				}
+			}
+		}
+
+		.about-content {
+			width: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 15px;
+
+			.about-text-1 {
+				width: 50%;
+				align-self: flex-start;
+				padding-right: 30px;
+
+				p {
+					color: $color-text-light;
+					font-weight: 300;
+				}
+
+				.download-btn {
+					width: fit-content;
+					margin-top: 40px;
+					width: 50%;
+				}
+			}
+
+			.about-image {
+				margin-top: 45px;
+				width: 50%;
+				padding-left: 30px;
+				margin-top: -110px;
+				align-self: center;
+
+				img {
+					width: 100%;
+					max-width: 100%;
+					padding: 15px;
+					border: 1px solid $color-accent-2-rgba;
+					order: 2;
+				}
+			}
+		}
+
+		.about-image-col {
+			flex: 0 0 45%;
+			max-width: 45%;
+		}
+
+		@media only screen and (max-width: 767px) {
+			.about-content {
+				padding: 0;
+
+				.about-text-1,
+				.about-image {
+					width: 100%;
+					padding: 15px 0;
+				}
+			}
+
+			.about-text-1 {
+				order: 2;
+			}
+
+			.about-image {
+				order: 1;
+				display: flex;
+				margin-top: 0 !important;
+
+				img {
+					margin: auto;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 639px) {
+			.about-container {
+				padding: 30px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 1199px) {
+		.about-container {
+			padding: 100px;
+		}
+	}
+
+	@media only screen and (max-width: 599px) {
+		.about-container {
+			padding: 30px;
+		}
+	}
+}

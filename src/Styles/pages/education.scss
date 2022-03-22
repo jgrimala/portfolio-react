@@ -1,0 +1,63 @@
+.education {
+	background: $color-bg;
+	padding: 50px 200px;
+
+	.education-container {
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+
+		.education-title {
+			margin-bottom: 100px;
+
+			h2 {
+				margin-top: 0;
+				margin-bottom: 20px;
+				position: relative;
+			}
+
+			h4 {
+				margin-bottom: 10px;
+			}
+
+			hr {
+				width: 80px;
+				height: 1px;
+				border: 0.02em solid rgba(249, 20, 89, 0.4);
+				margin: 0 auto;
+				padding: 0 auto;
+			}
+		}
+
+		.education-row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			position: relative;
+			width: 100%;
+			margin-top: 40px;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.education {
+		padding: 100px;
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	.education {
+		padding: 30px;
+
+		.education-container {
+			padding: 0;
+
+			.education-row {
+				padding: 0;
+			}
+		}
+	}
+}

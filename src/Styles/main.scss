@@ -1,0 +1,17 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/colors';
+@import 'utils/fonts';
+
+@import 'pages/hero';
+@import 'pages/about';
+@import 'pages/education';
+@import 'pages/experience';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/card';
+@import 'components/popup';
+
+@import 'app';
+

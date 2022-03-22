@@ -1,0 +1,146 @@
+.card {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	.card-item {
+		.card-single {
+			position: relative;
+			overflow: hidden;
+			transition: all 0.3s;
+			margin-bottom: 30px;
+
+			.card-img {
+				img {
+					width: 100%;
+					padding: 15px;
+					border: 1px solid $color-accent-2-rgba;
+				}
+			}
+
+			.card-content {
+				padding: 16px;
+				position: absolute;
+				left: 0;
+				top: 85%;
+				transition: all 0.4s;
+				opacity: 0.9;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+
+				h3 {
+					margin-top: 150px;
+					font-size: 1.8vw;
+				}
+
+				h4 {
+					font-size: 1.2vw;
+				}
+
+				a,
+				p {
+					font-size: 1.2vw;
+				}
+			}
+
+			&:hover .card-img {
+				opacity: 0.5;
+			}
+
+			&:hover .card-content {
+				top: 0px;
+				background: rgba(0, 0, 0, 0.9);
+				border: 1px solid $color-accent-2-rgba;
+
+				h3,
+				h4,
+				h5,
+				a,
+				p {
+					margin: 0 auto 10px;
+				}
+				a {
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.card {
+		flex: 0 0 50%;
+		max-width: 50%;
+
+		.card-item {
+			.card-single {
+				.card-content {
+					h3 {
+						margin-top: 150px;
+						font-size: 2.5vw;
+					}
+
+					h4 {
+						font-size: 1.8vw;
+					}
+
+					a,
+					p {
+						font-size: 1.5vw;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.card {
+		flex: 0 0 100%;
+		max-width: 100%;
+
+		.card-item {
+			.card-single {
+				.card-content {
+					h3 {
+						margin-top: 150px;
+						font-size: 4.5vw;
+					}
+
+					h4 {
+						font-size: 3.5vw;
+					}
+
+					a,
+					p {
+						font-size: 2.5vw;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	.card .card-item .card-single:hover .card-content {
+		h3 {
+			font-size: 6vw;
+		}
+
+		h4 {
+			font-size: 4.5vw;
+		}
+
+		a,
+		p {
+			font-size: 3.5vw;
+		}
+	}
+}
