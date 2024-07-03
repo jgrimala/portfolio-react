@@ -6,14 +6,30 @@ import ImgUdem from "../images/udem-1.jpg";
 import ImgLole from "../images/lole-1.jpg";
 import ImgBict from "../images/bict-1.jpg";
 import ImgChinaDaily from "../images/chinadaily-1.jpg";
+import Imglogistec from "../images/logistec.jpg";
 
 export default {
 	job: [
 		{
+			img: Imglogistec,
+			title: "Logistec, QC",
+			subtitle: "PHP developer",
+			year: "May 2022 to present",
+			description: ["Under Construction..."],
+			btnText: "Details",
+			actions: [
+				{
+					name: "Visit website",
+					href: "https://www.logistec.com/",
+					action: null,
+				},
+			],
+		},
+		{
 			img: ImgKorsr,
 			title: "Korsr, QC",
 			subtitle: "Frontend/Fullstack web developer",
-			year: "July 2021 to present",
+			year: "July 2021 to March 2022",
 			description: ["Under Construction..."],
 			btnText: "Details",
 			actions: [
